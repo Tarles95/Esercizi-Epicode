@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65em;
+    font-size: 1.2rem;
+    color: #393d41;
+}
+
+
+/*+++++++++++++++HEADER++++++++++++++++++*/
+
+
+header{
+    text-align: center;
+    background-color: black;
+    padding: 2em;
+    padding-right: 1.5em;
+}
+
+/*++++++++++++++++++MAIN++++++++++++++++++*/
+
+main{
+    text-align: center;
+}
+
+/*+++++++++++++++++++++ARTICLE++++++++++++++++*/
+
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.6em;
+    line-height: 1em;
+    color: #25a2c3;
+    font-weight: bold;
+    font-size: 2em;
+}
+h1, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.6em;
+    line-height: 1em;
+    color: #25a2c3;
+    font-weight: bold;
+}
+
+div button{
+    padding: 1em 2.3em;
+    border-radius: 5px;
+    background-color:#f04c2f;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border: 0;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+div.first{
+    background-image: url(../images/banner.jpg);
+    background-size: cover; 
+    background-position: center center;
+    padding: 1em;
+    padding-top: 3em;
+    padding-bottom: 0em;
+}
+article{
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+div.article{
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+main img{
+    width: 270px;
+    border-radius: 30em;
+    margin-bottom: 30px;
+}
+p#unique{
+    padding: 1.5em;
+    margin-top: -1em;
+}
+
+/*+++++++++++++++SECTION+++++++++++++++++*/
+
+
+section{
+    background-color: #e22d03;
+    color: white;
+    text-align: center;
+    
+}
+h2{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6em;
+    padding-top: 2.5em;
+    padding-bottom: 1em;
+}
+cite{
+    font-style: italic;
+    font-size: medium;
+}
+section p.sotto{
+    padding-top: 1.5em;
+}
+section p.ceo{
+    font-size: 0.8em;
+    padding-bottom: 2em;
+}
+
+
+/*++++++++++++++++++ASIDE+++++++++++++++*/
+
+
+aside figure img{
+    width: 351px;
+    height: 200px;
+}
+#riquadri{
+    border: 1px solid #dee1e3;
+    margin: 1em;
+    margin-top: 2em;
+}
+
+#riquadri h3{
+    padding-top: 1em;
+}
+#riquadri p{
+    padding-bottom: 2em;
+}
+
+
+/*+++++++++++++++++++++++++++FOOTER+++++++++++++++*/
+
+
+footer{
+    text-align: center;
+    background-color:#25a2c3;
+    color: #c8e7f0;
+    padding-bottom: 1.5em;
+}
+footer h2{
+    padding-top: 0.7em;
+}
+a:link{
+    color:#c8e7f0
+}
+address{
+    color: #c8e7f0;
+    padding-bottom: 2em;
+}
+hr{
+    width: 250px;
+}
+#copy{
+    padding;
+}

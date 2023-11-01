@@ -1,0 +1,93 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    background-image: url(sfondo.png);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+    padding: 15px;
+    background-position: center center;
+}
+*{box-sizing: border-box;}
+
+/* HEADER */
+header {
+    padding: 10px; margin: 15px;
+    text-align: center;
+    background-image: linear-gradient(rgb(40, 152, 243), rgb(1, 43, 71));
+}
+header p {
+    color: white;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+header img{
+    width: 300px;
+}
+nav a:link, nav a:visited{
+    color: white;
+}
+header ul{
+    list-style-type: none;
+}
+
+
+/* MAIN */
+main{
+    background-color: white;
+    margin: 2em 1.5em; 
+    text-align: left;
+    line-height: 1.7;
+}
+h2{
+  font-size: 2em;  
+}
+code{
+    background-color: gray;
+    border: 1px solid#000;
+    border-radius: 20px;
+}
+ main ul {
+    list-style-type: disc;
+    padding: 20px;
+}
+ol{
+    list-style-type: decimal;
+    padding: 20px;
+}
+caption{
+    font-style: italic;
+    font-weight: bold;
+}
+table{
+    text-align: center;
+}
+iframe{
+    border-radius: 20px;
+    width: 100%!important;
+    height: auto;
+    margin-bottom: 2em;
+}
+form{
+    background-color: rgb(209, 202, 202);
+}
+h4{
+    color: rgb(3, 3, 3) ;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.3em;
+}
+input[type=submit]{
+    background-color: rgb(45, 113, 214);
+}
+input{
+    text-align: center;
+}
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */

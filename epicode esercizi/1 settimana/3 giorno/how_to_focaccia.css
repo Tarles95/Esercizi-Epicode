@@ -1,0 +1,46 @@
+header{
+    text-align: center;
+    font-family: 'Sometype Mono', monospace;
+}
+header p{
+    border-top: 1px solid #ffa500;
+    background-color: beige;
+    text-align: center;
+}
+body{
+    font-family: 'Sometype Mono', monospace;
+}
+main{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+article{
+    border-left: solid 1px #ffa500;
+    padding-left: 10px;
+}
+div ul, ol{
+    text-align: left;
+}
+h4{
+    text-align: left;
+}
+p{
+    text-align: left;
+}
+article{
+    text-align: left;
+}
+div img{
+    text-align: center;
+    box-shadow: 5px 5px 5px #000;
+    border-radius: 10px;
+    
+}
+
+iframe{
+    padding-left: 450px ;
+}
+#unico{
+    list-style-type: none;
+}

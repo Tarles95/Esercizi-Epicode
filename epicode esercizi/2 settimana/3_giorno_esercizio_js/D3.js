@@ -248,9 +248,11 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 
 for (let i = 0; i < femaleCharacters.length; i++) {
   if(femaleCharacters[i].name == characters[i]) {
-    
+    characters.splice(i, 1);
   }
-
+for(let i = 0; i < characters.length; i++) {
+  inc in femaleCharacters.splice(i, 1);
+}
 }
 
 

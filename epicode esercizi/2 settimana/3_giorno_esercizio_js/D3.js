@@ -104,7 +104,7 @@ const starWarsCharacters = [
 /* ESERCIZIO 1
   Crea una variabile chiamata "characters" e assegnale un array vuoto
 */
-var characters = [];
+const characters = [];
 /* ESERCIZIO 2
   Utilizzando un ciclo for, cicla l'array "starWarsCharacters". 
   Dovrai accedere alla proprietà "name" di ogni oggetto in esso contenuto, e inserirla nell'array "starWarsCharacters"
@@ -114,10 +114,10 @@ var characters = [];
 // for ( ; ; ) { singolo in collezione, inserire in array metodo push, per accedere dot notation }
 // per controllare console.log
 
-for (var i = 0; i < starWarsCharacters.length; i++) {
+for (let i = 0; i < starWarsCharacters.length; i++) {
   characters[i] = starWarsCharacters[i].name;
-  }
-  console.log(characters);
+}
+console.log(characters);
 
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un nuovo array chiamato "femaleCharacters" e inserisci al suo interno
@@ -126,10 +126,17 @@ for (var i = 0; i < starWarsCharacters.length; i++) {
 */
 // nuovo array, ciclo, if accedo alla proprietà e verifico (genere -> female) { costruisco un oggetto con i tre dati riga 120}
 // push dentro all'array nuovo
-femaleCharacters = [];
-for(i = 0; i < starWarsCharacters.length; i++) {
-  if(starWarsCharacters[i].gender === 'female'); {
-  characters.push(starWarsCharacters[i].name);
+var femaleCharacters = [];
+for(let i = 0; i < starWarsCharacters.length; i++) {
+  const character = starWarsCharacters[i]
+
+  if(character.gender === 'female') {
+    const characterObj = {
+      name: character.name,
+      hair_color: character.hair_color,
+      eye_color: character.eye_color
+    }
+    femaleCharacters.push(characterObj)
   }
 }
 console.log(femaleCharacters);
@@ -157,19 +164,19 @@ for (let i = 0; i < character.length; i++) {
   
   switch (character[i].eye_color) {
       case "blue":
-          eyeColor.blue.push(character[i].name);
+          eyeColor.blue.push(character);
           break;
       case "yellow":
-          eyeColor.yellow.push(character[i].name);
+          eyeColor.yellow.push(character);
           break;
       case "brown":
-          eyeColor.brown.push(character[i].name);
+          eyeColor.brown.push(character);
           break;
       case "red":
-          eyeColor.red.push(character[i].name);
+          eyeColor.red.push(character);
           break;
       case "blue-gray":
-          eyeColor["blue-gray"].push(character[i].name);
+          eyeColor["blue-gray"].push(character);
           break;
   }
 }
@@ -181,11 +188,14 @@ console.log(eyeColor);
 */
 // uso while {qui dentro sommo tutte le proprietà mass e le metto nella variabile crewMass}
 // tip: ParseInt
+n = 0;
+
 let crewMass = 0;
 
-n = 0;
+
+
 while (n < starWarsCharacters.length) {
-    crewMass += parseInt(starWarsCharacters[n].mass);
+    crewMass = crewMass + parseInt(character.mass)
     n++;
 }
 console.log(crewMass);
@@ -246,14 +256,6 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 */
 // metodo splice
 
-for (let i = 0; i < femaleCharacters.length; i++) {
-  if(femaleCharacters[i].name == characters[i]) {
-    characters.splice(i, 1);
-  }
-for(let i = 0; i < characters.length; i++) {
-  inc in femaleCharacters.splice(i, 1);
-}
-}
 
 
 /* --EXTRA-- ESERCIZIO 10
@@ -263,3 +265,8 @@ for(let i = 0; i < characters.length; i++) {
 
 let random = Math.floor(Math.random()*starWarsCharacters.length);
 console.log(starWarsCharacters[random]);
+
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  const element = starWarsCharacters[i];
+  
+}

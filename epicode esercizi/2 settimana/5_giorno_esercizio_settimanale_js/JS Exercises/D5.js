@@ -11,7 +11,7 @@ REGOLE
     Dato il seguente array, scrivi del codice per stampare ogni elemento dell'array in console.
 */
 const pets = ['dog', 'cat', 'hamster', 'redfish']
-/*console.log("" + pets);
+console.log("" + pets);
 
 //oppure se voglio un elenco con i dati distintamente
 
@@ -21,7 +21,7 @@ console.log(pets[i]);
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
-/*pets.sort();
+pets.sort();
 console.log(pets);
 
 //Qui ho stampato un array, il quale aprendolo mi mostrerà i suoi elementi in ordine alfabetico
@@ -29,8 +29,8 @@ console.log(pets);
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
-/*let petsInvertito = pets.slice().reverse();
-console.log(petsInvertito);*/
+let petsInvertito = pets.slice().reverse();
+console.log(petsInvertito);
 
 //Qui ho stampato un array con gli elementi in ordine invertito, mantendendo anche l'ordine alfabetico
 
@@ -116,11 +116,11 @@ for(let e = 0; e < cars.length; e++){
 const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ]
-let i = 0;
+let t = 0;
 
-while (i < numericArray.length && numericArray[i] !== 66) {
+while (t < numericArray.length && numericArray[i] !== 66) {
   console.log(numericArray[i]);
-  i++;
+  t++;
 }
 
 

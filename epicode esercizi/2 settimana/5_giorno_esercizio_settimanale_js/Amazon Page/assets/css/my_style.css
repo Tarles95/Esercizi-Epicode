@@ -5,7 +5,7 @@
 /*+++++++++++ Body ++++++++++++*/
 body {
     color: #EDF2F4;
-    background-color: #E9EDEE;
+    background-color: #EBEDEE;
 }
 
 /* ++++++++++ Header +++++++++++*/
@@ -34,7 +34,7 @@ nav{
     margin-left: 15px;
 }
 nav span {
-  
+
     font-size: 1.3em;
     font-family: 'Arial Regular';
     margin-right: 25px;
@@ -43,6 +43,8 @@ nav span {
 /*+++++++++++++++ Main +++++++++++++++*/
 main{
     margin-top: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
     padding: 40px;
     font-family: 'Arial Regular';
 }
@@ -99,7 +101,7 @@ article a:link{
 }
 article div{
     display: inline-block;
-    width: 400px;
+    width: 280px;
     height: 500px;
     padding-top: 20px;
     border-radius: 20px;
@@ -112,19 +114,24 @@ article div{
     background-image: url(../images/img_1.jpg);
     background-position: center;
     padding-top: 10px;
+    object-fit: cover;
 }
 #img2 {
     background-image: url(../images/img_2.jpg);
     background-position: center;
+    object-fit: cover;
 }
 #img3 {
     background-image: url(../images/img_3.jpg);
     background-position: center;
+    object-fit: cover;
 }
 
 #img4 {
     background-image: url(../images/img_4.jpg);
     background-position: center;
+    object-fit: cover; 
+    margin-right: 0px;
 }
 
 /*+++++++++++++++++++ A Side +++++++++++++++*/

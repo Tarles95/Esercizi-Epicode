@@ -2,62 +2,51 @@
   Scrivi una funzione per concatenare due stringhe ricevute come parametri, selezionando solamente i primi 2 caratteri della
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 *///concat due stringhe,la cosa più comoda da usare è slice, il risultato touppercase
-let str1 = "Ciaone"
-let str2 = "Salute"
-
+const concatStr = (str1, str2) => {
+  return str1.slice(0, 2).concat(str2.slice(str2.length - 3));
+}
+console.log(concatStr("Paolo", "Cannone").toUpperCase());;
 
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 *///usiamo Math per generare numeri random ed arrotondarli
-function array1() {
-  const arrayVuoto = [];
-  for (let i = 0; i < 10; i++) {
-    const numeroCasuale = Math.floor(Math.random() * 101);
-    arrayVuoto.push(numeroCasuale);
+const tenElements = () => {
+  const array = [];
+  for(let i = 0; i<10; i++) {
+    array.push(Math.floor(Math.random() * 101))
   }
-
-  return arrayVuoto;
+  return array;
 }
-const arrayRandom = array1();
-console.log(arrayRandom);
-
+console.log(tenElements());
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 *///faccio un array e con filter dovremo passare una funzione che calcola solo i pari
-function trovaValoriPari(array) {
-  const valoriPari = array.filter(numero => numero % 2 === 0);
-  return valoriPari;
+const trovaValoriPari = (array) => {
+  const valoriPari = array.filter(numero => numero % 2 === 0); //dopo filter ci va una funzione, in questo caso la chiamo numero e le dico di controllare i numeri col % e dirmi se soddisfano
+  return valoriPari;                                           //la condizione
 }
 
-const array2 = [7, 12, 5, 24, 33, 18, 10, 42];
-const valoriPari = trovaValoriPari(array2);
 
-console.log(valoriPari);
+
+console.log(trovaValoriPari([10, 8, 11, 9]));
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 *///
-function sommaArray(array) {
+const sommaArray = (array) => {
   let somma = 0;
+    array.forEach((element) => {
+    somma += element;
+  })
+  return somma
+};
+console.log(sommaArray([5, 8, 3, 67]));
 
-  // Utilizza il metodo forEach per iterare attraverso gli elementi dell'array e sommarli
-  array.forEach(numero => {
-    somma += numero;
-  });
-
-  return somma;
-}
-
-// Esempio d'uso della funzione
-const array3= [1, 2, 3, 4, 5];
-const risultatoSomma = sommaArray(array3);
-
-console.log("La somma degli elementi nell'array è: " + risultatoSomma);
 
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
-function sommaArray2(array) {
+const sommaArray2 = (array) => {
   const somma = array.reduce((totale, num) => totale + num, 0);
 
   return somma;
@@ -70,7 +59,7 @@ console.log("La somma degli elementi nell'array è: " + risultatoS);
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
-function incrementaArrayDiN(array, n) {
+/*function incrementaArrayDiN(array, n) {
   const arrayIncrementato = array.map(nume => nume + n);
   
   return arrayIncrementato;

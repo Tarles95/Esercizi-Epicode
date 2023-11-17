@@ -193,16 +193,15 @@ console.log(risultato);
 /* ESERCIZIO 2
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
-function whoIsBigger() {
-  var numberOne = 15;
-  var numberTwo = 20;
+function whoIsBigger(numberOne, numberTwo) {
   if(numberOne > numberTwo) {
-    console.log(numberOne);
+    return numberOne;
   } else{
-    console.log(numberTwo)
+    return numberTwo;
   }
 }
-whoIsBigger();
+var esito = whoIsBigger(15, 20);
+console.log(esito);
 
 /* ESERCIZIO 3
   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
@@ -259,14 +258,15 @@ console.log(esito2)
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
 function isThisAnEmail (stringa4) {
-if(stringa4 = true) {
-  let email = ('' + '@' + '')
-  return true
+var evaluation = stringa4.search(/\w*@{1}\w*.*/i); 
+
+if(evaluation == -1){
+return false
 } else {
-  return false
+  return true
 }
 }
-var email = "esercizio@epicode.com"
+var email = "esercizioepicode.com"
 var booleanValue = isThisAnEmail(email);
 console.log(booleanValue)
 

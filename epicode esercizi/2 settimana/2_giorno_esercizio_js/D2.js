@@ -17,9 +17,9 @@ if (num1 > num2){
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
-let num3 = 5;
+
 let num4 = 6;
-if (num4 === num3){
+if (num4 === 5){
   console.log("==");
 }  
   else {

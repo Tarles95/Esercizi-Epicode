@@ -27,9 +27,9 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA*/
 
-    /*const name = "dambrosio";
+    var name = "dambrosio";
     name = "kebab";
-    console.log(name);*/ 
+    console.log(name); 
     
     /*D1.js:30 Uncaught TypeError: Assignment to constant variable.
     at D1.js:30:10*/
